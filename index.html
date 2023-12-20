@@ -12,12 +12,12 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-8">
-                    <div class="card shadow my-5">
+                    <div class="card shadow my-5" >
                         <div class="card-header">
                           <h3>Email list</h3>
                         </div>
-                        <ul class="list-group list-group-flush" v-if="emails.length == 10" v-for="email, index in emails">
-                          <li class="list-group-item" v-text="email" :key="index"></li>
+                        <ul class="list-group list-group-flush"  v-if="emails.length == 10">
+                          <li class="list-group-item" v-for="email, index in emails" v-text="email" :key="index"></li>
                         </ul>
                     </div>
                 </div>
